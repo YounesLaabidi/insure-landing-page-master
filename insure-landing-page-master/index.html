@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="././assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Insure landing page</title>
+    <style>
+      html,
+      body {
+        --DMSerifDisplay: "DM Serif Display", serif;
+        --Karla: "Karla", sans-serif;
+        --DarkViolet: hsl(256, 26%, 20%);
+        --GrayishBlue: hsl(216, 30%, 68%);
+        --VeryDarkViolet: hsl(270, 9%, 17%);
+        --DarkGrayishViolet: hsl(273, 4%, 51%);
+        --VeryLightGray: hsl(0, 0%, 98%);
+        font-family: var(--Karla);
+        list-style-type: none !important;
+      }
+      li {
+        list-style: none;
+      }
+      @media screen and (min-width: 62rem) {
+        section[hero-section] {
+          height: 658px;
+          padding-top: 117px !important;
+        }
+        img[alt="hero-img"] {
+          position: absolute;
+          width: 40% !important;
+          height: fit-content;
+          right: 0;
+          top: 6.25rem;
+          /* right: 6vw; */
+        }
+        h1[hero_headings] {
+          width: 469px;
+        }
+        p[hero__description] {
+          width: 539px;
+        }
+        section[section-two] {
+          padding-top: 100px !important;
+        }
+      }
+      @media screen and (min-width: 1111px) {
+        img[alt="hero-img"] {
+          width: 38% !important;
+          top: 6.25rem;
+          right: 6vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md py-3">
+      <div class="container-lg">
+        <a href="" class="navbar-brand">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#Navbar"
+          type="button"
+        >
+          <img src="./assets/images/icon-hamburger.svg" alt="" />
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOW WE WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACCOUNT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark py-2 px-3 ms-md-2" href="#"
+                >VIEW PLANS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section
+        hero-section
+        class="container-fluid text-white p-0 text-center text-lg-start position-relative"
+        style="background: var(--DarkViolet)"
+      >
+        <picture>
+          <source
+            media="(min-width: 48rem  )"
+            srcset="./assets/images/image-intro-desktop.jpg"
+          />
+          <img
+            class="w-100"
+            src="./assets/images/image-intro-mobile.jpg"
+            alt="hero-img"
+          />
+        </picture>
+        <div class="row w-100 px-lg-5">
+          <div class="col-12 col-lg-8">
+            <h1
+              class="display-2 mt-5 mt-lg-0 mb-2 fw-bold px-5 px-lg-0"
+              style="font-family: var(--DMSerifDisplay)"
+              hero__heading
+            >
+              Humanizing your insurance.
+            </h1>
+            <p class="px-5 px-lg-0 lh-base mb-3" hero__description>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <button
+              class="mb-5 bg-transparent text-white border border-1 py-2 px-3 mx-auto mx-lg-0"
+              style="width: fit-content"
+              hero__cta
+            >
+              View plans
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid py-5" section-two>
+        <h3
+          class="display-2 mb-4 text-center text-lg-start ps-lg-4"
+          style="font-family: var(--DMSerifDisplay)"
+        >
+          We’re different
+        </h3>
+        <div class="row text-center">
+          <div class="col-12 col-lg-4">
+            <div class="col-8 col-lg-12 mx-auto card border-0">
+              <img
+                class="card-img-top mx-auto mb-3"
+                src="./assets/images/icon-snappy-process.svg"
+                alt="icon-snappy-process"
+                style="width: 87px"
+              />
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="font-family: var(--DMSerifDisplay)"
+                >
+                  Snappy Process
+                </h5>
+                <p class="card-text">
+                  Our application process can be completed in minutes, not
+                  hours. Don’t get stuck filling in tedious forms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="col-8 col-lg-12 mx-auto card border-0">
+              <img
+                class="card-img-top mx-auto mb-3"
+                src="./assets/images/icon-affordable-prices.svg"
+                alt="icon-snappy-process"
+                style="width: 87px"
+              />
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="font-family: var(--DMSerifDisplay)"
+                >
+                  Affordable Prices
+                </h5>
+                <p class="card-text">
+                  We don’t want you worrying about high monthly costs. Our
+                  prices may be low, but we still offer the best coverage
+                  possible.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="col-8 col-lg-12 mx-auto card border-0">
+              <img
+                class="card-img-top mx-auto mb-3"
+                src="./assets/images/icon-people-first.svg"
+                alt="icon-snappy-process"
+                style="width: 87px"
+              />
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="font-family: var(--DMSerifDisplay)"
+                >
+                  People First
+                </h5>
+                <p class="card-text">
+                  Our plans aren’t full of conditions and clauses to prevent
+                  payouts. We make sure you’re covered when you need it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid text-center text-lg-start p-4">
+        <div class="row p-5" style="background: var(--DarkViolet)">
+          <h1
+            class="col-12 col-lg-9 text-white mb-4 display-2"
+            style="font-family: var(--DMSerifDisplay)"
+          >
+            Find out more about how we work
+          </h1>
+          <div
+            class="col-12 col-lg-3 d-lg-flex align-items-center justify-content-end"
+          >
+            <button
+              class="mb-5 mb-lg-0 bg-transparent text-white border border-1 py-2 px-3 text-uppercase"
+            >
+              How we work
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="row container-fluid text-center py-4 px-lg-5 m-0"
+      style="background: var(--VeryLightGray)"
+    >
+      <div class="col-12 col-lg-6 d-lg-flex align-items-center">
+        <img
+          src="./assets/images/logo.svg"
+          alt="logo"
+          style="width: 124px; height: fit-content"
+        />
+      </div>
+      <div class="col-12 col-lg-6">
+        <div
+          class="row mx-auto mx-lg-0 ms-lg-auto py-5 d-lg-"
+          style="width: fit-content"
+        >
+          <a href="#" class="col">
+            <img
+              class="col"
+              src="./assets/images/icon-facebook.svg"
+              alt="icon-facebook"
+            />
+          </a>
+          <a href="#" class="col">
+            <img src="./assets/images/icon-twitter.svg" alt="icon-twitter" />
+          </a>
+          <a href="#" class="col">
+            <img
+              src="./assets/images/icon-pinterest.svg"
+              alt="icon-pinterest"
+            />
+          </a>
+          <a href="#" class="col">
+            <img
+              src="./assets/images/icon-instagram.svg"
+              alt="icon-instagram"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-3 text-center">
+          <h5 class="text-uppercase">Our company</h5>
+          <ul class="d-flex flex-column gap-3 p-0">
+            <li>How we work</li>
+            <li>Why Insure?</li>
+            <li>View plans</li>
+            <li>Reviews</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5 class="text-uppercase">Help me</h5>
+          <ul class="d-flex flex-column gap-3 p-0">
+            <li>FAQ</li>
+            <li>Terms of use</li>
+            <li>Privacy policy</li>
+            <li>Cookies</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5 class="text-uppercase">Contact</h5>
+          <ul class="d-flex flex-column gap-3 p-0">
+            <li>Sales</li>
+            <li>Support</li>
+            <li>Live chat</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5 class="text-uppercase">Others</h5>
+          <ul class="d-flex flex-column gap-3 p-0">
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Licenses</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
